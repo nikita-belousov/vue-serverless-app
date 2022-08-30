@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-meddentvue-dev-42357-authRole",
+      "UnauthRoleArn": "arn:aws:iam::781634861121:role/amplify-meddentvue-dev-42357-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::781634861121:role/amplify-meddentvue-dev-42357-authRole",
+      "Region": "eu-central-1",
+      "DeploymentBucketName": "amplify-meddentvue-dev-42357-deployment",
+      "UnauthRoleName": "amplify-meddentvue-dev-42357-unauthRole",
+      "StackName": "amplify-meddentvue-dev-42357",
+      "StackId": "arn:aws:cloudformation:eu-central-1:781634861121:stack/amplify-meddentvue-dev-42357/ecfe96e0-25a6-11ed-b820-062ab435e348",
+      "AmplifyAppId": "d27xwkc1i27tho"
+    },
+    "categories": {
+      "function": {
+        "signup": {
+          "deploymentBucketName": "amplify-meddentvue-dev-42357-deployment",
+          "s3Key": "amplify-builds/signup-4c495952347066313170-build.zip"
+        }
+      }
+    }
+  }
+}

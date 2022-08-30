@@ -1,0 +1,10 @@
+{
+  "resourceName": "meddentdb",
+  "tableName": "signups",
+  "partitionKey": {
+    "fieldName": "id",
+    "fieldType": "number"
+  },
+  "gsi": [],
+  "triggerFunctions": []
+}
