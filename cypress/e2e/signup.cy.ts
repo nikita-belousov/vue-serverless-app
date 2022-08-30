@@ -16,7 +16,6 @@ describe('Signup', () => {
         cy.get('input[name="name"]').type('Никита');
         cy.get('input[name="phone"]').type('89772957127');
         cy.get('button[type="submit"]').click();
-
         cy.intercept('/dev/signup').as('signup');
         cy.wait('@signup').its('response.statusCode').should('eq', 200)
         cy.matchImageSnapshot('signup-success');

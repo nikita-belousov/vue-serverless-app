@@ -1,0 +1,17 @@
+version: 2.1
+orbs:
+  cypress: cypress-io/cypress@2.1.0
+workflows:
+  build:
+    jobs:
+      - cypress/install:
+          executor: cypress/base-16-14-2-slim
+          build: npm run build
+      - cypress/run:
+          requires:
+            - cypress/install
+          start: npm run preview
+          wait-on: 'http://localhost:4173'
+          executor: cypress/base-16-14-2-slim
+          command: npm run test:e2e:ci
+          store_artifacts: true
